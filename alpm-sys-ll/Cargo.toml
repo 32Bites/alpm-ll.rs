@@ -6,9 +6,9 @@ authors = ["morganamilo <morganamilo@gmail.com>", "Noah Shanaberger <noahshanabe
 edition = "2021"
 
 description = "Raw bindings for libalpm"
-homepage = "http://github.com/archlinux/alpm.rs"
-repository = "http://github.com/archlinux/alpm.rs"
-documentation = "https://docs.rs/alpm_sys_ll"
+homepage = "http://github.com/32Bites/alpm-ll.rs"
+repository = "http://github.com/32Bites/alpm-ll.rs"
+documentation = "https://docs.rs/alpm-sys-ll"
 license = "GPL-3.0"
 keywords = ["archlinux", "arch", "alpm", "pacman"]
 categories = ["external-ffi-bindings"]

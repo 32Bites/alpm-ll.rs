@@ -6,9 +6,9 @@ readme = "../README.md"
 edition = "2018"
 
 description = "Rust bindings for libalpm"
-homepage = "http://github.com/archlinux/alpm.rs"
-repository = "http://github.com/archlinux/alpm.rs"
-documentation = "https://docs.rs/alpm"
+homepage = "http://github.com/32Bites/alpm-ll.rs"
+repository = "http://github.com/32Bites/alpm-ll.rs"
+documentation = "https://docs.rs/alpm-ll"
 license = "GPL-3.0"
 keywords = ["archlinux", "arch", "alpm", "pacman"]
 categories = ["api-bindings"]

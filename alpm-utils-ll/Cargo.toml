@@ -5,9 +5,9 @@ authors = ["morganamilo <morganamilo@gmail.com>", "Noah Shanaberger <noahshanabe
 edition = "2018"
 
 description = "Helper functions for working with alpm"
-homepage = "http://github.com/archlinux/alpm.rs"
-repository = "http://github.com/archlinux/alpm.rs"
-documentation = "https://docs.rs/alpm-utils"
+homepage = "http://github.com/32Bites/alpm-ll.rs"
+repository = "http://github.com/32Bites/alpm-ll.rs"
+documentation = "https://docs.rs/alpm-utils-ll"
 license = "GPL-3.0"
 keywords = ["archlinux", "arch", "alpm", "pacman"]
 
