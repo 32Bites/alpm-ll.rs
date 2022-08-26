@@ -1,0 +1,25 @@
+[package]
+name = "alpm-utils-ll"
+version = "2.0.0"
+authors = ["morganamilo <morganamilo@gmail.com>"]
+edition = "2018"
+
+description = "Helper functions for working with alpm"
+homepage = "http://github.com/archlinux/alpm.rs"
+repository = "http://github.com/archlinux/alpm.rs"
+documentation = "https://docs.rs/alpm-utils"
+license = "GPL-3.0"
+keywords = ["archlinux", "arch", "alpm", "pacman"]
+
+[package.metadata.docs.rs]
+features = ["docs-rs", "pacmanconf"]
+
+[features]
+generate = ["alpm-ll/generate"]
+default = ["alpm-ll", "conf"]
+conf = ["pacmanconf", "alpm-ll"]
+docs-rs = ["alpm-ll/docs-rs"]
+
+[dependencies]
+alpm-ll = { path = "../alpm-ll", optional = true, version = "3.0.0" }
+pacmanconf = { version = "2.0.0", optional = true }

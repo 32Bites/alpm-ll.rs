@@ -1,0 +1,27 @@
+[package]
+name = "alpm-sys-ll"
+version = "3.0.0"
+readme = "../README.md"
+authors = ["morganamilo <morganamilo@gmail.com>", "Noah Shanaberger <noahshanaberger@gmail.com>"]
+edition = "2021"
+
+description = "Raw bindings for libalpm"
+homepage = "http://github.com/archlinux/alpm.rs"
+repository = "http://github.com/archlinux/alpm.rs"
+documentation = "https://docs.rs/alpm_sys_ll"
+license = "GPL-3.0"
+keywords = ["archlinux", "arch", "alpm", "pacman"]
+categories = ["external-ffi-bindings"]
+
+[features]
+generate = ["bindgen"]
+docs-rs = []
+
+[build-dependencies]
+bindgen = { version = "0.60", optional = true }
+
+[package.metadata.docs.rs]
+features = [ "docs-rs" ]
+
+[dependencies]
+libloading = "0.7"

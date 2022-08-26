@@ -1,4 +1,4 @@
-#  alpm.rs - rust bindings for libalpm
+# alpm.rs - rust bindings for libalpm
 
 [![Latest version](https://img.shields.io/crates/v/alpm.svg)](https://crates.io/crates/alpm)
 [![Documentation](https://docs.rs/alpm/badge.svg)](https://docs.rs/alpm)
@@ -13,7 +13,6 @@ the package management library used by pacman and other tools.
 - checkver - check that the version of libalpm installed is compatible with alpm.rs
 - git - target the git master API
 - static - statically link to libalpm
-
 
 **Note:** checkver does not work with the git feature. You can instead use
 the generate feature to ensure alpm.rs builds against a compatible libalpm version.
@@ -42,3 +41,11 @@ There are also examples on how to use the alpm crate in [alpm/examples](alpm/exa
 
 This repo also contains the alpm-sys crate, providing raw bindings for libalpm.
 Although you probably just want to use the alpm crate instead.
+
+# My Changes
+
+I changed this library to be entirely dependent on loading libalpm at runtime through libloading.
+Allows for this to be utilized as an optional dependency at runtime. This is useful for utilities
+that may potentially need to use libalpm, but, may not have the ability to due to system constraints.
+
+Signed, Noah Shanaberger.
